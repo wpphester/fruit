@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>果蔬-项目案例</title>
+    <link rel="shortcut icon" href="小图标2.jpg"/>
+    <style>
+        *{
+            padding:0;
+            margin:0 auto;
+        }
+        #header{
+            width:100%;
+            height:50px;
+            background:#FFFAF5;
+            position:fixed;
+            z-index: 1;;
+        }
+        #header a{
+            height:100%;
+            text-decoration:none;
+            color:#333;
+            line-height:50px;
+            float:left;
+        }
+        #header span{
+            height:100%;
+            margin-left:20px;
+            margin-right:20px;
+            font-size:14px;
+            line-height:50px;
+            float:left;
+        }
+        #header input{
+            width:100px;
+            height:30px;
+            margin-top:10px;
+            margin-left:20px;
+            float:left;
+        }
+        #header .box{
+            float:right;
+            margin-right:20px;
+        }
+        #header .ipn2:hover{
+            background:#5874D8!important;
+            color:#fff!important;
+        }
+        #nav{
+            height:120px;
+            padding-top:50px;
+        }
+        #nav .nleft{
+            width:442px;
+            height:33px;
+            margin-left:100px;
+            margin-top:40px;
+            float:left;
+        }
+        #nav .nleft span{
+            text-align:center;
+            font-size:32px;
+            font-weight:bold;
+            float:left;
+        }
+        #nav .nleft .s1{
+            width:323px;
+            height:33px;
+            color:#4BB344;
+        }
+        #nav .nleft .s2{
+            width:119px;
+            height:33px;
+            color:#CCC;
+        }
+        #nav .nright{
+            width:580px;
+            height:33px;
+            margin-top:45px;
+            margin-right:90px;
+            float:right;
+        }
+        #nav .nright a{
+            width:80px;
+            height:33px;
+            margin-left: 30px;
+            color: #333;
+            line-height: 33px;
+            text-align: center;
+            text-decoration: none;
+            float:left;
+        }
+        #nav .nright a:hover{
+            color: #4BB344;
+        }
+        #content .bigimg{
+            height: 544px;
+            position: relative;
+            background: url("bigImg.png") -250px 0px;
+        }
+        #content .bigimg .imgtitle{
+            width: 351px;
+            height: 97px;
+            margin: 110px 0 0 180px;
+        }
+        #content .bigimg .jtl{
+            width: 71px;
+            height: 71px;
+            background: url("jiantou.png")rgba(0,0,0,0.1) ;
+            position: absolute;
+            margin-top: 240px;
+            margin-left: 60px;
+            float:left;
+        }
+        #content .bigimg .jtr{
+            width: 71px;
+            height: 71px;
+            background: url("right.png")rgba(0,0,0,0.1);
+            margin-top: 240px;
+            margin-right: 60px;
+            float:right;
+        }
+        #content .bigimg .p_1{
+            width: 250px;
+            height:80px;
+            margin-top: 50px;
+             margin-left: 180px;
+        }
+        #content .bigimg .p_1 p{
+            color: #fff;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        #content .c_1{
+            width: 840px;
+            height: 220px;
+            margin-top: 80px;
+        }
+        #content .c_1 p{
+            width: 840px;
+            height:31px;
+            line-height: 36px;
+            text-align:center;
+        }
+        #content .c_2{
+            width:  1200px;
+            height:  500px;
+            margin-top: 100px;
+        }
+        #content .c_2 .c_2_1{
+            width: 348px;
+            height: 412px;
+            margin-left:20px;
+            margin-top: 50px;
+            float: left;
+        }
+        #content .c_2 .c_2_2{
+            width: 348px;
+            height: 412px;
+            margin-left:60px;
+            margin-top: 50px;
+            float: left;
+        }
+        #content .c_2 .c_2_3{
+            width: 348px;
+            height: 412px;
+            margin-left: 60px;
+            margin-top: 50px;
+            float: left;
+        }
+        #content .c_2 p{
+            width: 348px;
+            height: 30px;
+            line-height: 30px;
+            text-align:center;
+        }
+        #content .c_2 a{
+            width: 130px;
+            height:99px;
+            margin-left: 110px;
+            background: url("8.png");
+            float: left;
+        }
+        #content .c_2 a:hover{
+            background: url("12.png");
+        }
+        #content .c_3{
+            width: 100%;
+            height:500px;
+            background: url("2.jpg");
+        }
+        #content .c_3 p{
+            height: 30px;
+            text-align: center;
+            line-height: 30px;;
+        }
+        #content .c_3 h1{
+            width: 260px;
+            height: 44px;
+            margin: 0 auto;
+        }
+        #content .c_3 h1 a{
+            width: 130px;
+            height: 44px;
+            float: left;
+        }
+        #content .c_3 .c_3_1{
+            background: url("9.png");
+        }
+        #content .c_3  .c_3_2{
+            background: url("11.png");
+        }
+        #content .c_3 h1:hover .c_3_2{
+            background: url("10.png");
+        }
+        #content .c_4{
+            height: 600px;
+            background:url("1.jpg") -250px 0px;
+        }
+        #content .c_4_1 {
+            width: 50%;
+            float: right;
+        }
+        #content .c_4_1 p{
+            margin-left: 40px;
+            height: 25px;;
+            color: #666;
+        }
+        #content .c_5{
+            height: 700px;
+            background: url("3.jpg") -300px 0px;
+        }
+        #content .c_5 .c_5_2{
+            width: 400px;
+            height: 280px;
+            margin-top: 110px;
+            margin-left:70px;
+            float: left;
+
+        }
+        #content .c_5 .c_5_3{
+            width: 500px;
+            height: 300px;
+            margin-left: 100px;
+            float: left;
+        }
+        #content .c_6{
+            height:600px;
+            background: #2E2E2E;
+        }
+        #content .c_6 .c_6_1 p{
+            height: 42px;
+            margin-left: 90px;
+        }
+        #mz,#del{
+            width:320px;
+            height:18px;
+            padding:10px;
+            border:0 none;
+            background: #5E5E5E;
+            border-radius:3px;
+        }
+        #nr{
+            width:320px;
+            height:105px;
+            padding:10px;
+            border:0 none;
+            background: #5E5E5E;
+            border-radius:3px;
+        }
+        #content .c_6 .c_6_2 .mzdiv,.deldiv{
+            width:400px;
+            height:40px;
+            margin-bottom:25px;
+        }
+        #content .c_6 .c_6_2 .nrdiv{
+            width:415px;
+            height:116px;
+            margin-left:40px;
+            margin-bottom:25px;
+        }
+        #sub{
+            width:210px;
+            height:45px;
+            line-height:45px;
+            background:#85C300;
+            border:0 none;
+            font-size:14px;
+            font-family:"微软雅黑";
+            color:#fff;
+            margin-left:40px;
+            cursor: pointer;
+        }
+        #footer{
+            height:70px;
+            background: #282828;
+        }
+        #footer a{
+            text-decoration:none;
+            color: #9b9b9b;
+            font-size: 14px;
+            font-family: 微软雅黑;
+        }
+        #footer p a:hover{
+            color: #4BB344;
+        }
+    </style>
+</head>
+<body style="height:4090px;">
+    <div id="header">
+         <div class="box">
+             <a href="">上一个</a>
+                <span>13/35</span>
+                <a href="">下一个</a>
+                <input type="button" value="复制网站" style="background:#5874D8;border:1px solid #5874D8;color:#fff;" />
+                <input class="ipn2" type="button" value="更多模板" style="background:#FAFAFA;border:1px solid #E3E2E8;color:#333;" />
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nleft">
+             <span class="s1">Vegetables & Fruits</span>
+             <span class="s2">Design</span>
+         </div>
+         <div class="nright">
+            <a href="" style="color:#4BB344;">首页</a>
+            <a href="">水果种类</a>
+            <a href="">新闻动态</a>
+            <a href="">关于我们</a>
+            <a href="">联系我们</a>
+         </div>
+    </div>
+    <div id="content">
+        <div class="bigimg">
+            <a href="www.baidu.com" class="jtl"></a>
+            <a href="www.baidu.com" class="jtr"></a>
+            <img src="img1.png" class="imgtitle" />
+            <div class="p_1">
+                <p>多个基地：多种植基地，品质安全。</p>
+                <p>优选品种：精选品种 ，精心育种。</p>
+                <p>企业愿景：成为优秀果业公司</p>
+            </div>
+        </div>
+        <div class="c_1">
+            <p><span style="color: #ACACAC;font-family: 微软雅黑;font-size: 20px"> 战略定位</span></p>
+            <p><span style="color: #4BB344;font-family: 微软雅黑;font-size: 28px">做优秀的水果</span></p>
+            <p></p>
+            <p><span style="color:#666;font-family: 微软雅黑;font-size: 15px">围绕向越来越多的人提供最好吃的和性价比极高的水果，致力于水果产业链和</span></p>
+            <p><span style="color:#666;font-family: 微软雅黑;font-size: 15px">水果专营连锁业态的发展，致力于水果善知识和文化的创造与传播。到2030年，发展成为在全球拥有百万亩以上种植基地和</span></p>
+            <p> <span style="color:#666;font-family: 微软雅黑;font-size: 15px">15000家以上门店、世界第一的果业公司！致力于水果产业链</span></p>
+            <p><span style="color:#666;font-family: 微软雅黑;font-size: 15px">水果专营连锁业态的发展，致力于水果善知识和文化的创造与传播。到2030年，</span></p>
+        </div>
+        <div class="c_2">
+            <div class="c_2_1" >
+                <img src="5.png" style="margin-left:100px" />
+                <p><span style="font-family: 微软雅黑;font-size: 18px">香蕉</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size:14px">是蔷薇科中经济价值较高的一属植物苹</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size: 14px">果是世界上最著名的水果之一，中国是苹果产量最高的</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size: 14px">国家。苹果属植物如垂丝海棠、</span></p>
+                <a href=""></a>
+            </div>
+            <div class="c_2_2" >
+                <img src="7.png" style="margin-left:100px" />
+                <p><span style="font-family: 微软雅黑;font-size: 18px">苹果</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size:14px">是蔷薇科中经济价值较高的一属植物苹</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size: 14px">果是世界上最著名的水果之一，中国是苹果产量最高的</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size: 14px">国家。苹果属植物如垂丝海棠、</span></p>
+                <a href=""></a>
+            </div>
+            <div class="c_2_3">
+                <img src="6.png" style="margin-left:100px" />
+                <p><span style="font-family: 微软雅黑;font-size: 18px">车厘子</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size:14px">是蔷薇科中经济价值较高的一属植物苹</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size: 14px">果是世界上最著名的水果之一，中国是苹果产量最高的</span></p>
+                <p><span style="color: #666;font-family: 微软雅黑;font-size: 14px">国家。苹果属植物如垂丝海棠、</span></p>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="c_3">
+            <p style="height:130px"></p>
+            <p><span style="color: #fff;font-family: 微软雅黑;font-size:20px">在业界率先提出水果好吃的标准是“四度一味一安全”</span></p>
+            <p><span style="color: #fff;font-family: 微软雅黑;font-size:16px">即糖酸度、鲜度、脆度、细嫩度、香味和安全性。</span></p>
+            <p></p>
+            <p><span style="color: #fff;font-family: 微软雅黑;font-size:16px">针对水果存在巨大差异，按照好吃标准，</span></p>
+            <p><span style="color: #fff;font-family: 微软雅黑;font-size:16px">首次将水果分为珍稀果、招牌级、A级、B级、C级，以保障消费者的切身利益。顾客价值第一，</span></p>
+            <p><span style="color: #fff;font-family: 微软雅黑;font-size:16px">员工发展第二、合作伙伴第三、股东利益第四、社会贡献第五。</span></p>
+            <p style="height: 50px"></p>
+            <h1>
+                <a href="" class="c_3_1"></a>
+                <a href="" class="c_3_2"></a>
+           </h1>
+        </div>
+        <div class="c_4">
+            <div class="c_4_1">
+                <p style="height: 170px"></p>
+                <p><span style="font-size: 18px;font-family: 微软雅黑">愿景：</span></p>
+                <p><span style="color: #4BB344;font-size: 20px;font-family: 微软雅黑">成为世界第一果业公司</span></p>
+                <p style="height: 60px"></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">××××蔬菜（集团）有限公司是由拥有50多年历史的××××蔬菜公司于</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">1999年3月按现代化企业制度要求改制而成。集团以蔬菜、水果、粮油、肉</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">类、冻品、水产、南北干货以及花卉等农产品批发市场经营管理、</span></p>
+                <p style="height: 30px"></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">围绕向越来越多的人提供最好吃的和性价比极高的水果，致力于水果产业链</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">和水果专营连锁业态的发展，致力于水果善知识和文化的创造与传播。到</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">2030年，发展成为在全球拥有百万亩以上种植基地和15000家以上门店、世</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑">界第一的果业公司！</span></p>
+            </div>
+        </div>
+        <div class="c_5">
+            <div class="c_5_1" style="width: 640px;height: 380px;float: left"></div>
+            <div class="c_5_2">
+                <p style="height: 30px"><span style="font-size: 18px;font-family: 微软雅黑;color: #fff">好吃有标准吗？</span></p>
+                <p style="height: 25px"><span style="font-size: 18px;font-family: Arial;color: #fff">THERE ARE GOOD STANDARDS?</span></p>
+                <p style="height: 38px"></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #fff">围绕向越来越多的人提供最好吃的和性价比极高的水果，致力</span></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #fff">于水果产业链和水果专营连锁业态的发展，致力于水果善知识</span></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #fff">和文化的创造与传播。到2030年，发展成为在全球拥有百万亩</span></p>
+            </div>
+            <div class="c_5_3">
+                <p style="height: 70px"></p>
+                <p style="height: 30px"><span style="font-size: 18px;font-family: 微软雅黑;color: #fff">什么是好吃？</span></p>
+                <p style="height: 25px"><span style="font-size: 18px;font-family: Arial;color: #fff">WHAT IS GOOD?</span></p>
+                <p style="height: 38px"></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #fff">好吃是一种令人愉悦的享受。致力于水果产业链和水果专营连</span></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #fff">锁业态的发展，致力于水果善知识和文化的创造与传播。到</span></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #fff">2030年，发展成为在全球拥有百万亩</span></p>
+            </div>
+      </div>
+        <div class="c_6">
+            <div class="c_6_1" style="width: 600px;height: 500px;float: left">
+                <p style="height: 140px"></p>
+                <p style="height: 25px"><span style="font-size: 14px;font-family: 微软雅黑;color: #C0C0C0">24小时资讯热线：</span></p>
+                <p style="height: 25px"><span style="font-size: 22px;font-family: Arial;color: #fff">400-000000</span></p>
+                <p style="height: 50px"></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑;color: #888">地址：XXX省XXX市XXX县XXX路XXX号</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑;color: #888">联系电话：020-000000</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑;color: #888">传真号码：020-000000</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑;color: #888">邮箱：contact@fkadjkhsf.co</span></p>
+                <p><span style="font-size: 14px;font-family: 微软雅黑;color: #888">邮政编码：510000</span></p>
+            </div>
+            <div class="c_6_2" style="width: 600px;height: 500px;float: right">
+                <form method="post" action="http://baidu.com" style="margin-right: 120px">
+                    <p style="height: 140px"></p>
+                    <div class="mzdiv">
+                        <input type="text" name="mz" id="mz" />
+                    </div>
+                    <div class="deldiv">
+                        <input type="text" name="del" id="del"  />
+                    </div>
+                    <div class="nrdiv">
+                        <textarea cols="25" rows="5" id="nr"></textarea>
+                    </div>
+                    <div class="subdiv" >
+                        <input type="submit" id="sub" value="提交"/>
+                    </div>
+                    <div class="p_1" style="width: 43px;height: 300px;float: left;margin-left:5px;margin-top: -310px">
+                        <p style="height: 65px;font-weight: bold;color:#5E5E5E; font-family:微软雅黑;font-size: 14px ">姓名</p>
+                        <p style="height: 95px;font-weight: bold;color:#5E5E5E; font-family:微软雅黑;font-size: 14px">电话</p>
+                        <p style="font-weight: bold;color:#5E5E5E; font-family:微软雅黑;font-size: 14px">内容</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p style="color: #9b9b9b;font-size: 14px;font-family: 微软雅黑;margin-left: 70px;padding-top:15px;height: 22px"> &copy;2018 蔬果-样板 版权所有</p>
+        <p style="color: #9b9b9b;font-size: 14px;font-family: 微软雅黑;margin-left: 70px;"><a href="" >手机版</a>
+        |本站使用 <a href="">凡科建站 </a> 搭建 |<a href="">管理登录</a></p>
+
+    </div>
+</body>
+</html>
